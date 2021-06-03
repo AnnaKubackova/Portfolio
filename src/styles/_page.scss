@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'utilities';
+
+@mixin page {
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: $white;
+    z-index: 2;
+    position: absolute;
+    transition: transform .4s ease-in-out;
+    color: $black;
+
+    .page__closebutton {
+        right: 0;
+    }
+
+    .page__article {
+        @include flex;
+        width: 80vw;
+        height: 100vh;
+        margin: 0 auto;
+
+        .page__title {
+            color: $pink;
+            margin-bottom: 2rem;
+            font-size: 24px;
+        }
+    }
+}

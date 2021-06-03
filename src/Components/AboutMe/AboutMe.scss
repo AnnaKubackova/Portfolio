@@ -1,0 +1,17 @@
+.aboutme {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    margin: 5rem auto 0 !important;
+
+    &__left {
+        width: 50%;
+    }
+
+    &__right {
+        position: relative;
+        width: 15rem;
+        margin: 5rem auto 0;
+        padding: 0;
+        cursor: auto;
+    }   
+}

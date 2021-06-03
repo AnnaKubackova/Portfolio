@@ -1,0 +1,82 @@
+@import 'page';
+
+//Skills
+.showSkills {
+    @include page;
+    left: 0;
+    animation: skillsShow 0.7s;
+}
+
+.hideSkills {
+    @include page;
+    left: -100%;
+    animation: skillsHide 0.7s;
+}
+
+//About me
+.showAboutMe {
+    @include page;
+    bottom: 0;
+    animation: aboutmeShow 0.7s;
+}
+
+.hideAboutMe {
+    @include page;
+    bottom: -100%;
+    animation: aboutmeHide 0.7s;
+}
+
+//Projects
+.showProjects {
+    @include page;
+    left: 0;
+    animation: projectsShow 0.7s;
+
+    img {
+        left: 0;
+    }
+}
+
+.hideProjects {
+    @include page;
+    left: 100%;
+    animation: projectsHide 0.7s;
+    
+    img {
+        left: 0;
+    }
+}
+
+/* Animations */
+//Skills
+@keyframes skillsHide {
+    0%   {left: 0}
+    100% {left: -100%}
+}
+
+@keyframes skillsShow {
+    0%   {left: -100%}
+    100% {left: 0}
+}
+
+//About Me
+@keyframes aboutmeHide {
+    0%   {bottom: 0}
+    100% {bottom: -100%}
+}
+
+@keyframes aboutmeShow {
+    0%   {bottom: -100%}
+    100% {bottom: 0}
+}
+
+//Projects
+@keyframes projectsHide {
+    0%   {left: 0}
+    100% {left: 100%}
+}
+
+@keyframes projectsShow {
+    0%   {left: 100%}
+    100% {left: 0}
+}
